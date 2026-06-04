@@ -1,0 +1,277 @@
+/* Reset e Configurações Gerais */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.main-content {
+  margin-top: 80px; /* Margem para não cobrir o conteúdo por causa do header fixo */
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.hero-image-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Seções de Homenagem (Mãe e Pai) */
+.tribute-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  border-radius: 15px;
+}
+
+.section-mom {
+  background-color: #ffeef2; /* Fundo Rosa Claro */
+}
+
+/* CONTEXTO DA SEÇÃO PAI (E MÃE) */
+.tribute-section {
+  display: flex;
+  flex-direction: column; /* Coloca o texto em cima e a imagem embaixo */
+  align-items: center;    /* Centraliza tudo na horizontal */
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 800px;       /* Limita a largura máxima da seção */
+  margin: 0 auto;         /* Centraliza a seção inteira na tela */
+  text-align: center;     /* Centraliza os textos */
+}
+
+/* O CARD DE TEXTO */
+.section-card {
+  margin-bottom: 25px;    /* Espaço entre o texto e a foto */
+  max-width: 600px;
+}
+
+.section-card h2 {
+  color: #2c3e35;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.section-card p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* CONTAINER DA IMAGEM (O segredo para diminuir e centralizar) */
+.imagem-pai, .imagem-mae {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;          /
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* A FOTO EM SI */
+.section-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Encaixa a foto perfeitamente sem distorcer as pessoas */
+  object-position: center top; /* Foca mais na parte de cima da foto (nos rostos) */
+}
+
+/* Container Grid para colocar Texto e Imagem lado a lado */
+.section-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; /* Faz quebrar linha em telas menores como celulares */
+}
+
+/* Cartão de Texto Branco */
+.section-card {
+  flex: 2; /* Ocupa mais espaço que a imagem */
+  min-width: 300px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-card h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.section-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Container da Imagem Lateral */
+.section-image-container {
+  flex: 1; /* Ocupa a proporção lateral */
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo das Imagens que entram nos quadrados vermelhos */
+.side-img {
+  width: 100%;
+  max-width: 350px;
+  height: 220px;
+  object-fit: cover; /* Garante que a foto preencha o espaço sem distorcer */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.side-img:hover {
+  transform: scale(1.02);
+}
+
+/* Seção Galeria */
+.gallery-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery-item {
+  background-color: #eee;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+  color: #666;
+  font-weight: 500;
+}
+
+.gallery-item {
+  background-color: #eee;
+  height: 200px;
+  width: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+  color: #666;
+  font-weight: 500;
+  padding-left: 10px;
+}
+./* GALERIA DE MEMÓRIAS - ALINHAMENTO CORRETO */
+.gallery-section {
+  padding: 60px 8%;
+  text-align: center;
+  background-color: #fcfdfc;
+}
+
+.gallery-section h2 {
+  margin-bottom: 35px;
+  color: #2c3e35;
+  font-size: 28px;
+}
+
+/* Força os 3 quadrados a ficarem lado a lado de forma simétrica */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* O Quadrado de cada memória */
+.gallery-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eaeaea;
+}
+
+/* Força a imagem a ficar em um quadrado controlado */
+.gallery-image-wrapper {
+  width: 100%;
+  height: 200px; /* Altura limite do quadrado da imagem */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Faz a imagem preencher o espaço sem esticar ou quebrar o layout */
+.gallery-img-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta centralizando o foco da foto */
+  display: block;
+}
+
+/* Texto abaixo da foto perfeitamente alinhado */
+.gallery-caption {
+  font-size: 16px;
+  font-weight: 600;
+  color: #455a50;
+  padding-top: 5px;
+}
+
+/* Responsividade: vira uma coluna só em telas de celular */
+@media (max-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
