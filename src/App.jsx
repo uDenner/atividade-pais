@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import heroImg from './assets/viagem.jpg';
 import heroImg2 from './assets/nos3.JPG';
-import heroImg3 from './assets/amor.jpg';
 import heroImg4 from './assets/IMG_6123.jpg';
 import videoHomenagem from './assets/954AF998-75EA-4EEB-9307-C9D0124166B4.MP4';
 import './App.css';
