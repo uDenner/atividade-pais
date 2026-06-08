@@ -96,7 +96,7 @@ body {
 .imagem-pai, .imagem-mae {
   width: 100%;
   max-width: 400px;
-  height: 400px;          /
+  height: 400px; 
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
